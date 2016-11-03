@@ -1,19 +1,23 @@
 {
-	"name": "weather",
-	"version": "0.0.1",
-	"description": "Test task ",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "",
-	"license": "ISC",
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com/pmnazar/weather.git"
-	},
-	"bugs": {
-		"url": "https://github.com/pmnazar/weather/issues"
-	},
-	"homepage": "https://github.com/pmnazar/weather#readme"
+  "name": "weather",
+  "version": "0.0.1",
+  "description": "Test task ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pmnazar/weather.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmnazar/weather/issues"
+  },
+  "homepage": "https://github.com/pmnazar/weather#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0"
+  }
 }
