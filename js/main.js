@@ -29,7 +29,7 @@
 				li.className = 'weather__list-result-item';
 				li.appendChild(span);
 				
-				li.innerHTML = '— ' + li.innerHTML + ', ' + res.sys.country + ': ' + res.main.temp + '° C, ' + res.weather[ 0 ].description;
+				li.innerHTML = '— ' + li.innerHTML + ', ' + res.sys.country + ': ' + res.main.temp + '°C, ' + res.weather[ 0 ].description;
 				
 				listResult.appendChild( li );
 			} else {
