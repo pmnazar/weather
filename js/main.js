@@ -12,7 +12,7 @@
 			xhr = new XMLHttpRequest(),
 			apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + city.value + '&appid=' + apiId + '&units=metric';
 		
-		xhr.open( 'POST', apiUrl, true );
+		xhr.open( 'GET', apiUrl, true );
 		
 		xhr.send();
 		
