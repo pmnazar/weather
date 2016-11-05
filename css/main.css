@@ -13,6 +13,10 @@ body {
     text-align: center;
     margin-top: 118px;
     margin-bottom: 63px; }
+  .weather__form-group img {
+    height: 30px;
+    padding: 10px;
+    display: none; }
   .weather__form-group input {
     outline: none; }
   .weather__form-group label {

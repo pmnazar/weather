@@ -16,6 +16,11 @@ body {
 		margin-bottom  : 63px;
 	}
 	&__form-group {
+		img {
+			height : 30px;
+			padding : 10px;
+			display : none;
+		}
 		input {
 			outline : none;
 		}
