@@ -23,15 +23,19 @@
 				var res = JSON.parse( this.responseText ),
 					li = document.createElement( 'li' ),
 					span = document.createElement( 'span' );
-				
+				console.log( res );
 				span.innerHTML = res.name; // set city name
 				
 				li.className = 'weather__list-result-item';
-				li.appendChild(span);
+				li.appendChild( span );
 				
 				li.innerHTML = '— ' + li.innerHTML + ', ' + res.sys.country + ': ' + res.main.temp + '°C, ' + res.weather[ 0 ].description;
-				
-				listResult.appendChild( li );
+				// check length result list, append elem first
+				if ( listResult.childNodes.length > 1 ) {
+					listResult.insertBefore( li, listResult.firstElementChild )
+				} else {
+					listResult.appendChild( li );
+				}
 			} else {
 				console.error( 'Error: ' + (this.status ? this.statusText : 'request failed') );
 				return false;
