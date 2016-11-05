@@ -11,7 +11,7 @@
 			search = document.getElementById( 'search' ),
 			xhr = new XMLHttpRequest(),
 			apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + city.value + '&appid=' + apiId + '&units=metric';
-		
+		city.value = '';
 		xhr.open( 'GET', apiUrl, true );
 		
 		xhr.send();
@@ -31,7 +31,7 @@
 				
 				li.innerHTML = '— ' + li.innerHTML + ', ' + res.sys.country + ': ' + res.main.temp + '°C, ' + res.weather[ 0 ].description;
 				// check length result list, append elem first
-				if ( listResult.childNodes.length > 1 ) {
+				if ( listResult.childNodes.length >= 1 ) {
 					listResult.insertBefore( li, listResult.firstElementChild )
 				} else {
 					listResult.appendChild( li );
